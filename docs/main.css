@@ -11,7 +11,7 @@
 }    
 
 body{
-    padding:30px 0;
+    padding:10px 0;
     overflow-x: hidden;
     background-color: #fff;
     transition: all 1s ease;
@@ -26,24 +26,24 @@ header{
 .container{
     transform: translateY(0px);
 }
-.header-container{
+#header-container{
     padding: 0 30px;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
 }
-.header-container > *:first-child{
+#header-container > *:first-child{
     font-family: 'Calligraffitti', cursive;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: nowrap;
 }
-.header-icon{
+#header-icon{
     margin-right: 8px;
 }
-.logo-img{
+#logo-img{
     width: 60px;
     height: 60px;
     object-fit: cover;
@@ -61,11 +61,11 @@ header{
 }
 
 /* menu btn,only for mobile*/
-.menu{
+#menu{
     margin-left: auto; 
     margin-bottom: 10px;
 }
-.menu-btn{
+#menu-btn{
     padding: 20px;
     background-color: var(--lightgrayBox);
     border: 0;
@@ -85,7 +85,7 @@ header{
 .showed{
     display: block;
 }
-.mobile-links{
+#mobile-links{
     list-style: none;
     padding: 0;
 }
@@ -117,7 +117,7 @@ header{
     bottom: 0;
     right: 0;
 }
-.desktop-links{
+#desktop-links{
     display: flex;
     list-style: none;
     padding: 0;
@@ -149,14 +149,14 @@ header{
 }
 
 /* Slider images*/
-.panoramic-image{
+#panoramic-image{
     margin: 0;
     padding: 0;
     border: none;
     border-top: 7px solid var(--orangeItem);
     width: 100vw;
 }
-.image-slider{
+#image-slider{
     position: relative;
     height: 30vh;
     animation:fadeLoadingPage 2s linear;
@@ -225,7 +225,7 @@ header{
 }
 
 /* control bullet*/
-.bullet-container{
+#bullet-container{
     position: absolute;
     bottom: 10px;
     left: 50%;
@@ -263,7 +263,7 @@ header{
 }
 
 /*Carts*/
-.cards-container{
+#cards-container{
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -293,13 +293,13 @@ header{
 }
 
 /*Description */
-.description-container h1{
+#description-container h1{
     font-family: "Cinzel Decorative" , sans-serif;
     font-weight: lighter;
     font-size: 32px;
     margin-bottom: 20px;
 }
-.description-container p{
+#description-container p{
     font-family: "Quicksand" , sans-serif;
     font-size: 20px;
     margin-bottom: 30px;
@@ -316,7 +316,7 @@ footer > *:first-child{
     background-color: #1e1e1e;
     color: #fff;
 }
-.footer-info{
+#footer-info{
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px;
@@ -366,7 +366,7 @@ footer > *:last-child{
     background-color: #353535;
     border-top: dashed 1px var(--orangeItem);
 }
-.footer-creator{
+#footer-creator{
     font-family: "Roboto",sans-serif;
     max-width: 1200px;
     margin:  0 auto;
@@ -375,10 +375,10 @@ footer > *:last-child{
     justify-content: center;
     align-items: center;
     color: #bbbbbb;
-    padding: 15px 0;
+    padding: 15px 20px;
     position: relative;
 }
-.footer-creator p{
+#footer-creator p{
     padding: 15px 0;
 }
 .scroll-top-btn{
@@ -402,12 +402,12 @@ footer > *:last-child{
 }
 
 /* HTML LOCATION PAGE*/
-.description-container #h2Loc{
+#description-container #h2Loc{
     font-family: "Cinzel Decorative" , sans-serif;
     font-weight: lighter;
     margin-bottom: 20px;
 }
-.description-container .pLoc{
+#description-container .pLoc{
     font-family: "Roboto" , sans-serif;
     font-size: 16px;
 }
@@ -505,7 +505,7 @@ body .btnBackItineraries.active{
 }
 
 /*HTML CONTACT US PAGE*/
-.contactUs-container
+#contactUs-container
 {
     display: flex;
     flex-direction: column;
@@ -581,34 +581,34 @@ form >*:last-child{
 }
 
 /*Details*/
-.contactUs-details{
+#contactUs-details{
     font-family: "Roboto",sans-serif;
 }
-.contactUs-details > h4,
-.contactUs-details > p
+#contactUs-details > h4,
+#contactUs-details > p
 {
     line-height: 35px;
     font-size: 20px;
 }
-.contactUs-details p > a{
+#contactUs-details p > a{
     word-wrap: break-word;
 }
-.contactUs-details p:last-child{
+#contactUs-details p:last-child{
     margin-bottom: 40px;
 }
-.contactUs-details p a.varColor{
+#contactUs-details p a.varColor{
     color: var(--orangeItem);
 }
 
 /*Socials*/ 
-.contactUs-socials > div{
+#contactUs-socials > div{
     margin: 0 auto;
     max-width: 600px;
     display: flex;
     justify-content: space-between;
 }
 
-.contactUs-socials > div a{
+#contactUs-socials > div a{
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -621,7 +621,7 @@ form >*:last-child{
     font-size: 30px;
     transition: all 0.5s ease ;
 }
-.contactUs-socials > div a:hover{
+#contactUs-socials > div a:hover{
     background-color: var(--orangeItem);
     color: #fff;
 }
@@ -676,7 +676,6 @@ dialog::backdrop {
     color: black;
 }
 
-/*Animation effect*/
 .appear{
     animation: autoShowAnimation 5s linear;
     animation-timeline: view();
@@ -695,13 +694,13 @@ dialog::backdrop {
 }
 
 @media (min-width : 576px){
-    .header-container{
+    #header-container{
         flex-direction: row;
     }
-    .menu{
+    #menu{
         margin-bottom: 0;
     }
-    .image-slider{
+    #image-slider{
         height: 50vh;
     }
 
@@ -717,7 +716,7 @@ dialog::backdrop {
     }
 }
 @media(min-width : 1024px){
-    .menu , .mobile-links-container{
+    #menu , .mobile-links-container{
         display: none;
     }
     .desktop-links-container{
@@ -725,7 +724,7 @@ dialog::backdrop {
     }
 
     /*Image slider*/
-    .image-slider{
+    #image-slider{
         height: 90vh;
     }
     .image-btn-left,.image-btn-right{
@@ -733,37 +732,37 @@ dialog::backdrop {
     }
 
     /* control bullet*/
-    .bullet-container{ 
+    #bullet-container{ 
         bottom: 30px;
     }
     .main#home{
         flex-direction: column;
     }
-    .cards-container{
+    #cards-container{
         flex-direction: row;
     }
-    .footer-info{
+    #footer-info{
         flex-direction: row;
     }
     .footer-box{
         margin-bottom: 0;
     }
-    .footer-creator{
+    #footer-creator{
         flex-direction: row;
         justify-content: space-between;
     }
     .footer-box #privacyPolice:hover{
         color: var(--orangeItem);
     }
-    .contactUs-container
+    #contactUs-container
     {
         flex-direction: row;
     }
-    .contactUs-form{
+    #contactUs-form{
         width: 66,66666667;
         padding: 0 30px;
     }
-    .contactUs-container > *:last-child{
+    #contactUs-container > *:last-child{
         width: 33,33333337;
         padding: 0 15px;
     }

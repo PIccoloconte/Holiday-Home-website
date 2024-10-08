@@ -1,4 +1,4 @@
-const menu = document.querySelector(".menu");
+const menu = document.querySelector("#menu");
 
 const toggleMenu = document.querySelector(".mobile-links-container");
 const btnScrollTop = document.querySelector(".scroll-top-btn");
